@@ -38,11 +38,11 @@ public class CandidateGenerator {
         PassportOffice office = new PassportOffice();
         Random random = new Random();
         //Assumption we are starting the Passport office at 9:00 AM now
-        new CandidateGenerator(0, random, 4, office); //Immediately(assuming 9am now) generate 20 candidates
-        /*new CandidateGenerator((15), random, 10, office); //After 15 Mts generate 40 candidates
-        new CandidateGenerator((30), random, 20, office); //After 30 Mts generate 20 candidates
-        new CandidateGenerator((45), random, 10, office); //After 45 Mts generate 10 candidates*/
-        new CandidateCalculator((30), office); //After 1 hour. The calculator task will print the number of candidates completed*/
+        new CandidateGenerator(0, random, 20, office); //Immediately(assuming 9am now) generate 20 candidates
+        new CandidateGenerator((15*60), random, 30, office); //After 15 Mts generate 40 candidates
+        new CandidateGenerator((30*60), random, 20, office); //After 30 Mts generate 20 candidates
+        new CandidateGenerator((45*60), random, 45, office); //After 45 Mts generate 10 candidates
+        new CandidateCalculator((60*60), office); //After 1 hour. The calculator task will print the number of candidates completed*/
     }
 }
 
